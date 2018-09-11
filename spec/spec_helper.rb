@@ -97,4 +97,7 @@ RSpec.configure do |config|
   # as the one that triggered the failure.
   Kernel.srand config.seed
 =end
+
+  # Load Target Programs
+  Dir[File.join(File.dirname(__FILE__), "..", "**/*.rb")].each{|f| require f }
 end
